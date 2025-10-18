@@ -1,6 +1,6 @@
 # 28. Find the Index of the First Occurrence in a String
 
-**Difficulty:** Easy
+**Difficulty:** Easy <br>
 **Status:** Solved
 
 ---
