@@ -4,17 +4,17 @@
 
 This project implements the classic **substring search** problem — finding the first occurrence of a substring (`needle`) inside a larger string (`haystack`).
 
-Currently, it includes a **naive (brute-force)** implementation written in Go.
-Future updates will add the **KMP algorithm** and benchmark comparisons.
+It contains both **naive** (**brute-force**) and optimized (**KMP**) approaches written in **JavaScript** and **Go**, along with benchmark results.
 
 ---
 
 ### 🚀 Features
 
-* ✅ Simple and clear implementation
-* ✅ No third-party libraries
-* 🧠 Ready for future algorithm additions (KMP, etc.)
-* 📊 Benchmark and performance tracking supported
+- ✅ Simple and clear implementation
+- ✅ Solutions in Go and JavaScript
+- ✅ No third-party libraries
+- 🧠 Naive and optimized implementations
+- 📊 Benchmark and performance tracking supported
 
 ---
 
@@ -28,19 +28,37 @@ The naive search algorithm checks for the substring match by iterating through e
 
 Where:
 
-* `n` → length of `haystack`
-* `m` → length of `needle`
+- `n` → length of `haystack`
+- `m` → length of `needle`
+
+---
+
+### 🧮 Algorithm 2: Optimized Search (KMP)
+
+**Description:**
+The KMP algorithm improves efficiency by avoiding redundant comparisons.
+It preprocesses the pattern (`needle`) to build an **LPS** (**longest prefix suffix**) table, then uses it to skip characters that have already been matched.
+
+**Time Complexity:** `O(n + m)`
+**Space Complexity:** `O(m)`
 
 ---
 
 ### 📊 Performance
 
-You can visualize your time-performance results here:
+This project includes benchmarks comparing execution time between the **naive** substring search approach and the **KMP** algorithm.
+
+KMP demonstrates significantly better scalability, especially with large strings or repetitive patterns, because it avoids re-checking characters that have already been matched.
+
+In summary:
+
+- **Naive** → gets slower quickly as input grows
+- **KMP** → remains fast and efficient at scale
+
+You can visualize the performance results here:
 
 ```markdown
-![Performance Comparison](./images/performance.png)
+![Performance Comparison](./performance/go-kmp.png)
 ```
-
-*(The image file should be located at `./images/performance.png`.)*
 
 ---
