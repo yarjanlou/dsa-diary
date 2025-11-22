@@ -17,5 +17,4 @@
 | **Time**        | `O(n)` — Each element is visited once.                                         |
 | **Space**       | `O(1)` — The algorithm modifies the array in-place without using extra memory. |
 
----
 

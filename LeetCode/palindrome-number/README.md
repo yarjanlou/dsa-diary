@@ -51,4 +51,3 @@ Explanation: Reads 01 backward, which is not 10.
 
 - `-2^31 <= x <= 2^31 - 1`
 
----
