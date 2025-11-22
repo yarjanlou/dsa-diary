@@ -1,6 +1,6 @@
 # 🧩 Problem 26: Remove Duplicates from Sorted Array
 
-**Difficulty:** Easy
+**Difficulty:** Easy <br>
 **Topics:** Array, Two Pointers
 
 ---
