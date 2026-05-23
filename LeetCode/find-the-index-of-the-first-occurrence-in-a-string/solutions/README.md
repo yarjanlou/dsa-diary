@@ -57,8 +57,7 @@ In summary:
 
 You can visualize the performance results here:
 
-```markdown
 ![Performance Comparison](./performance/go-kmp.png)
-```
+
 
 ---
