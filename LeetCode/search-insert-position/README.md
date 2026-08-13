@@ -51,23 +51,38 @@ Explanation: 0 would be inserted at the beginning (index 0).
 
 ## 🧭 Approaches
 
-1. Linear scan (Brute force)
-   - Iterate through nums and return the first index i where nums[i] >= target.
-   - Time: O(n), Space: O(1).
-   - Simple but does not meet the preferred O(log n) requirement for large inputs.
+### 1) Linear scan (Brute force)
 
-2. Binary search (Recommended)
-   - Use a classic binary search to find the lowest index where nums[index] >= target.
-   - Maintain left and right pointers and narrow the search range until left == right. The final position for insertion is `left`.
-   - Time: O(log n), Space: O(1).
+- Description: Iterate through `nums` and return the first index `i` where `nums[i] >= target`.
+- Complexity: **Time:** O(n) · **Space:** O(1)
+- Notes: Simple and easy to implement, but not optimal for large inputs.
 
-   Pseudo-steps for binary search:
-   - Initialize left = 0, right = nums.length
-   - While left < right:
-     - mid = left + (right - left) // 2
-     - if nums[mid] < target: left = mid + 1
-     - else: right = mid
-   - Return left
+### 2) Binary search (Recommended)
+
+- Description: Use binary search to find the lowest index where `nums[index] >= target` (the leftmost insertion point).
+- Complexity: **Time:** O(log n) · **Space:** O(1)
+- Notes: Preferred because it meets the O(log n) runtime requirement.
+
+#### Pseudocode
+
+```text
+left = 0
+right = len(nums)
+while left < right:
+    mid = left + (right - left) // 2
+    if nums[mid] < target:
+        left = mid + 1
+    else:
+        right = mid
+return left
+```
+
+#### Quick comparison
+
+| Approach | Time | Space | When to use |
+|---|---:|---:|---|
+| Linear scan | O(n) | O(1) | Small arrays or when simplicity matters |
+| Binary search (recommended) | O(log n) | O(1) | Large arrays or when optimal runtime is required |
 
 ---
 
