@@ -61,13 +61,13 @@ Explanation: 0 would be inserted at the beginning (index 0).
    - Maintain left and right pointers and narrow the search range until left == right. The final position for insertion is `left`.
    - Time: O(log n), Space: O(1).
 
-Pseudo-steps for binary search:
-- Initialize left = 0, right = nums.length
-- While left < right:
-  - mid = left + (right - left) // 2
-  - if nums[mid] < target: left = mid + 1
-  - else: right = mid
-- Return left
+   Pseudo-steps for binary search:
+   - Initialize left = 0, right = nums.length
+   - While left < right:
+     - mid = left + (right - left) // 2
+     - if nums[mid] < target: left = mid + 1
+     - else: right = mid
+   - Return left
 
 ---
 
@@ -84,4 +84,3 @@ Pseudo-steps for binary search:
 
 - The returned index is always between 0 and nums.length (inclusive). If the target is larger than all elements, it returns nums.length.
 - The binary search variant above returns the leftmost insertion point, which is suitable for arrays with distinct values.
-
