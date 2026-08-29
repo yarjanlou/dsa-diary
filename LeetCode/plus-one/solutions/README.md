@@ -43,17 +43,14 @@ digit is `9`, it prepends `1` to the resulting zeros.
 ```javascript
 var plusOne = function (digits) {
   for (let i = digits.length - 1; i >= 0; i--) {
-    if (digits[i] + 1 != 10) {
-      digits[i] = digits[i] + 1;
+    if (digits[i] < 9) {
+      digits[i]++;
       return digits;
     }
     digits[i] = 0;
   }
 
-  if (digits[0] == 0) {
-    digits = [1, ...digits];
-  }
-
+  digits.unshift(1);
   return digits;
 };
 ```
@@ -88,8 +85,7 @@ func plusOne(digits []int) []int {
 For both implementations:
 
 - **Time:** O(n) in the worst case and O(1) in the best case
-- **Space:** O(1) auxiliary space when no new leading digit is needed; O(n) for
-  the returned array when the input consists entirely of `9`s
+- **Space:** O(1) auxiliary space when no new leading digit is needed; O(n) for the returned array when the input consists entirely of `9`s
 
 ---
 
