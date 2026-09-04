@@ -20,8 +20,23 @@ Think of it as developer diary, where consistency matters more than perfection.
 
 ## 🗂 Folder Structure
 
-TODO
+This repo is organized around **concepts/patterns**, not just a chronological list of LeetCode problems. Each concept gets its own numbered folder under `LeetCode/`, with a README explaining the pattern and a small, deliberately chosen set of problems that teach it.
 
+```text
+LeetCode/
+├── 00-legacy-warmups/       # problems solved before this curriculum existed
+├── 01-hashing-and-frequency-counting/
+└── [future concepts]
+```
+
+Problems solved before this structure existed live in `00-legacy-warmups/` — preserved as-is, not reorganized retroactively.
+
+### 📈 Learning Progression
+
+| # | Concept | Status | Problems |
+|---|---|---|---:|
+| 00 | Legacy Warmups | ✅ Complete | 12 |
+| 01 | Hashing & Frequency Counting | 🚧 In Progress | 1/5 |
 
 ---
 
