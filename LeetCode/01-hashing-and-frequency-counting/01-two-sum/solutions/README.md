@@ -17,3 +17,8 @@ This is the canonical Complement Lookup problem. Instead of checking every pair 
 
 - Time: `O(n)` — a single pass over the array with O(1) average map lookups/inserts.
 - Space: `O(n)` — the map can hold up to n-1 entries before the match is found.
+
+## Performance
+
+![Go benchmark](./performance/main-go.jpg)
+![JavaScript benchmark](./performance/main-js.jpg)
