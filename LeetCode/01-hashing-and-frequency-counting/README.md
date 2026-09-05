@@ -44,10 +44,10 @@ A huge number of interview problems reduce to some version of "have I seen this 
 
 | # | Problem | Difficulty | What it teaches | Status |
 |---|---|---|---|---|
-| 1 | Contains Duplicate | Easy | Seen Set — basic membership checking | ⏳ Not Started |
-| 2 | Valid Anagram | Easy | Frequency Map — comparing counts between two collections | ⏳ Not Started |
-| 3 | Two Sum | Easy | Complement Lookup — replacing a nested loop with a single pass | ✅ Solved |
-| 4 | Group Anagrams | Medium | Grouping by Key — bucketing elements by a derived key | ⏳ Not Started |
+| 1 | Two Sum | Easy | Complement Lookup — replacing a nested loop with a single pass | ✅ Solved |
+| 2 | Group Anagrams | Medium | Grouping by Key — bucketing elements by a derived key | ⏳ Not Started |
+| 3 | Subarray Sum Equals K | Medium | Prefix Sum + Frequency Map — counting subarrays via cumulative sums | ⏳ Not Started |
+| 4 | Longest Consecutive Sequence | Medium | Seen Set — using a set to find sequence starts in O(n) | ⏳ Not Started |
 | 5 | Top K Frequent Elements | Medium | Frequency counting combined with sorting/selection | ⏳ Not Started |
 
 ## Mastery Check
